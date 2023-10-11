@@ -1,0 +1,20 @@
+SET SERVEROUTPUT ON;
+DECLARE
+NOMBRE VARCHAR2(100);
+EDAD NUMBER(30);
+FECHANACIMIENTO DATE;
+
+BEGIN
+
+NOMBRE:='Daniel De Jesus Paredes Alvarez';
+EDAD:= 25;
+FECHANACIMIENTO:=TO_DATE('04-05-1998','DD/MM/YYYY');
+
+DBMS_OUTPUT.PUT_LINE('Mi nombre es '|| NOMBRE);
+DBMS_OUTPUT.PUT_LINE('Mi edad es ' || EDAD);
+DBMS_OUTPUT.PUT_LINE('Naci en esta fecha ' || FECHANACIMIENTO);
+
+
+DBMS_OUTPUT.PUT_LINE('Mi nombre es ' || NOMBRE || ' Tengo ' || EDAD || ' Años' || ' y naci En la fecha ' || FECHANACIMIENTO);
+
+END;
